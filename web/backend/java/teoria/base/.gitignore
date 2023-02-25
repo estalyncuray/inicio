@@ -1,5 +1,5 @@
 /bin/
 .settings/
 tmp/
-.classpath
-.project
+.classpath/
+.project/
