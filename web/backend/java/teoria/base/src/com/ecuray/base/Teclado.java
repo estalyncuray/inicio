@@ -1,4 +1,4 @@
-package base;
+package com.ecuray.base;
 
 import java.util.Scanner;
 

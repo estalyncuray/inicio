@@ -1,5 +1,5 @@
 
-package base;
+package com.ecuray.base;
 
 /**
  * @author Estalyn
