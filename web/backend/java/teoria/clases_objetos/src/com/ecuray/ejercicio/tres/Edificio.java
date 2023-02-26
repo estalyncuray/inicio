@@ -31,7 +31,7 @@ public class Edificio {
 		return false;
 	}
 	
-	public int llevarAscensorAPiso( int piso){
+	public void llevarAscensorAPiso( int piso){
 		int numAscensorMasCercano = 0;
 		int distancia;
 		int minimaDistanciaEnPisos = Math.abs( piso - ascensores[0].getPiso());
@@ -42,10 +42,28 @@ public class Edificio {
 				minimaDistanciaEnPisos = distancia;
 			}
 		}
-		return ascensores[numAscensorMasCercano].mover(piso);
+		mover(piso, ascensores[numAscensorMasCercano].getPiso(),ascensores[numAscensorMasCercano].getId());
+		ascensores[numAscensorMasCercano].setPiso(piso);
 	}
 	
-	public int moverAscensorAPiso(int numAscensor,int piso){
-		return ascensores[numAscensor].mover(piso);
+	public void moverAscensorAPiso(int numAscensor,int piso){
+		mover(piso, ascensores[numAscensor].getPiso(),ascensores[numAscensor].getId());
+		ascensores[numAscensor].setPiso(piso);
+	}
+	
+	private void mover(int piso, int pisoActual, int id) {
+		if(pisoActual < piso) {
+			System.out.println("Pueta abierta");
+			for(int i = pisoActual; i < piso; i++) {
+				System.out.printf("Ascensor %d en piso %d: \n", id, i + 1);
+			}
+			System.out.println("Pueta cerrada");
+		} else {
+			System.out.println("Pueta abierta");
+			for(int i = pisoActual; i>= piso; i--) {
+				System.out.printf("Ascensor %d en piso %d: \n", id, i);
+			}
+			System.out.println("Pueta cerrada");
+		}
 	}
 }

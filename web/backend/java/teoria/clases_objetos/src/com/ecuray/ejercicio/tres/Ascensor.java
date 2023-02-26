@@ -44,23 +44,4 @@ public class Ascensor {
 		return "Ascensor [piso=" + piso + ", puerta=" + puerta + "]";
 	}
 	
-	public int  mover (int piso){
-		int resultado = 0;
-		if(this.piso < piso) {
-			resultado = subir(piso);
-		} else {
-			resultado = bajar(piso);
-		}
-		return resultado;
-	}
-	
-	private int subir(int piso) {
-		this.piso = piso;
-		return 0;
-	}
-	
-	private int bajar(int piso) {
-		this.piso = piso;
-		return 1;
-	}
 }

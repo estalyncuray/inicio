@@ -53,11 +53,8 @@ public class Principal {
 		int piso = teclado.nextInt();
 		teclado.nextLine();
 		
-		int mover = edificio.llevarAscensorAPiso(piso);
-		moverAscensor(mover);
+		edificio.llevarAscensorAPiso(piso);
 	}
-	
-	
 	
 	public void ascensorAPiso() {
 		System.out.print("Indica que ascensor: ");
@@ -67,21 +64,8 @@ public class Principal {
 		teclado.nextLine();
 		
 		if(edificio.existe(id)) {
-			int mover = edificio.moverAscensorAPiso(id, piso);
-			moverAscensor(mover);
+			edificio.moverAscensorAPiso(id, piso);
 		}				
-	}
-	
-	private void moverAscensor(int mover) {
-		switch(mover) {
-		case 0:
-			System.out.println("Subiendo..");
-			break;
-		case 1: 
-			System.out.println("Bajando..");
-			break;
-			default:
-		}
 	}
 	
 	public static void main(String[] args) {
