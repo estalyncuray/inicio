@@ -1,0 +1,27 @@
+1.- (Hora)
+	Haz un programa que lea dos horas (hh mm) y escriba cuantos minutos hay entre una y otra.
+
+2.- Haz un programa que permita mover una torre en un tablero de ajedrez. 
+	Muestra la posición de la torre en el tablero, lee movimientos (casilla destino), 
+	valida el movimiento y mueve la torre (la sitúa en la casilla destino). 
+	Repetir hasta que el usuario no quiera hacer más movimientos.
+	
+3.- En un edificio hay 3 ascensores. Cada ascensor tiene una puerta que puede abrirse y cerrarse. Haz un programa que permita:
+
+3.1.- Mover un ascensor a un piso: indicando el ascensor que se quiere mover y el piso al que ha de moverse
+3.2.-Llamar desde piso: indicando el piso desde el que se llama y se enviará el ascensor más cercano.
+3.0.- Salir.
+	Inicialmente los ascensores estarán en el piso 0 y con las puertas cerradas.
+	Aquí se muestra una ejecución del programa:
+	1.- Mover ascensor a piso
+	2.- Llamar ascensor desde piso
+	0.- Salir
+	Selecciona opción: 1
+	Indica que ascensor:2
+	A que piso?: 3
+	
+	Ascensor 2 en piso: 0
+	Ascensor 2 en piso: 1
+	Ascensor 2 en piso: 2
+	Ascensor 2 en piso: 3
+	Se abre la puerta
